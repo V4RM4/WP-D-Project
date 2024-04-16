@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/styles1.css">
+    <title>Sign Up for Membership</title>
+</head>
+<body>
+    <header class="banner">
+        <h1>Amazing Games Hub</h1>
+    </header>
+    <nav class="pages">
+        <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../webpages/membership.html">Membership</a></li>
+            <li><a href="../webpages/games.html">Catalog</a></li>
+            <li><a href="../webpages/gallery.html">Gallery</a></li>
+            <li><a href="../webpages/aboutus.html">About Us</a></li>
+        </ul>
+    </nav>
+    <main>
+        <div class="content">
+            <h2 class="subheading">Sign Up for Membership</h2>
+            <form id="membershipForm" onsubmit="return submitMembershipForm()">
+                <label for="firstName">First Name:</label><br>
+                <input type="text" id="firstName" name="firstName" required><br>
+                <label for="lastName">Last Name:</label><br>
+                <input type="text" id="lastName" name="lastName" required><br>
+                <label for="dob">Date of Birth:</label><br>
+                <input type="date" id="dob" name="dob" required><br>
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" required><br>
+                <label for="phone">Phone:</label><br>
+                <input type="tel" id="phone" name="phone" required><br>
+                <label for="favGame">Favorite Game:</label><br>
+                <input type="text" id="favGame" name="favGame" required><br>
+                <label for="employmentStatus">Employment Status:</label><br>
+                <select id="employmentStatus" name="employmentStatus" required>
+                    <option value="">Select Status</option>
+                    <option value="Employed">Employed</option>
+                    <option value="Unemployed">Unemployed</option>
+                    <option value="Student">Student</option>
+                    <option value="Other">Other</option>
+                </select><br>
+                <label for="membershipTier">Membership Tier:</label><br>
+                <select id="membershipTier" name="membershipTier" required>
+                    <option value="">Select Tier</option>
+                    <option value="Bronze">Bronze</option>
+                    <option value="Silver">Silver</option>
+                    <option value="Gold">Gold</option>
+                    <option value="Platinum">Platinum</option>
+                </select><br>
+                <input type="submit" value="Submit">
+            </form>  
+            <div id="membershipBenefits" class="membership-benefits">
+            </div>          
+        </div>
+    </main>
+    <footer>
+        <nav class="footerpages">
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../webpages/membership.html">Membership</a></li>
+                <li><a href="../webpages/games.html">Catalog</a></li>
+                <li><a href="../webpages/gallery.html">Gallery</a></li>
+                <li><a href="../webpages/aboutus.html">About Us</a></li>
+            </ul>
+        </nav>
+        <div class="end">
+            <h2>Address</h2>
+            <address>
+                Amazing Games Hub<br>
+                Viewcrest Circle, 
+                Toronto, ON
+                M9W X0X
+            </address>
+            <h2>Contact</h2>
+            <p>Phone: <a href="tel:+1(437)660-0000">+1(437)660-0000</a></p>
+            <p><a href="mailto:hello@amazinggameshub.com">Click here to send us an email!</a></p>
+            <p>&copy; 2024 Amazing Games Hub</p>
+        </div>
+    </footer>
+
+    <script src="../javascript/script.js"></script>
+</body>
+</html>

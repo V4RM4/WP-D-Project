@@ -1,0 +1,306 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    background-image: url(../images/bg2.jpeg);
+}
+
+main {
+    margin-left: 300px;
+}
+
+header{
+    background-image: url(../images/banner.webp);
+    background-size: cover;
+    background-position: center;
+}
+
+header h1{
+    color: white;
+    text-align: center;
+    font-size: xx-large;
+    font-weight: 300;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-shadow: 2px 2px 10px rgba(255, 255, 255, 0.732);
+}
+
+.content h2 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 400;
+    text-align: center;
+    color: white;
+    background-color: black;
+    padding: 10px 5px 10px 5px;
+}
+
+.banner {
+    background-image: url("../images/banner.webp");
+    background-size: 150px;
+    padding: 10px 10px 10px 10px;
+}
+
+.banner h1 {
+    text-align: center;
+    color: white;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 80px;
+    font-style: italic;
+    font-weight: bold;
+}
+
+.description {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 300;
+}
+
+.content .subphoto {
+    float: left;
+    width: 300px;
+    padding-right: 20px;
+    border-radius: 20px;
+}
+
+.content .description {
+    font-size: large;
+    padding-bottom: 100px;
+    color: white;
+}
+
+.pages {
+    float: left;
+    display: block;
+    padding: 20px;
+    color: white;
+}
+
+ul {
+    padding: 0;
+    list-style: none;
+}
+
+main {
+    padding: 20px;
+}
+
+.content{
+    padding: 20px;
+}
+
+.centered {
+    text-align: center;
+}
+
+.collections {
+    padding-top: 50px;
+    padding-bottom: 350px;
+    height: 100px;
+    width: 30%;
+    display: inline-block;
+    margin-right: 10px;
+    background-color: rgba(255, 255, 255, 0.363);
+    text-align: center;
+    border-radius: 10px;
+}
+
+.collections img {
+    border-radius: 10px;
+    width: fit-content;
+}
+
+.collections h2 {
+    color: rgb(255, 255, 255);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 300;
+}
+
+.game {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+.pages {
+    background-color: rgba(255, 255, 255, 0.369);
+    width: 15%;
+    height: 700px;
+}
+
+.pages ul li {
+    background-color: rgba(255, 255, 255, 0.529);
+    background-image: url(../images/libg.jpeg);
+    border-radius: 10px;
+}
+
+.pages ul li a {
+    color: black;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 500;
+}
+
+.pages ul li a {
+    text-decoration: none;
+    font-size: large;
+    padding: 5px;
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 25px;
+}
+
+.pages ul li {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.top {
+    padding-top: 40px;
+    padding-left: 25px;
+    padding-right: 100px;
+    border-radius: 10px;
+    width: 88%;
+    background-color: rgb(0, 0, 0);
+}
+
+footer {
+    background-color: rgba(255, 255, 255, 0.361);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 20px 20px 20px 20px;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+footer .footerpages {
+    text-align: center;
+    padding: 10px 10px 10px 10px;
+}
+
+footer .footerpages ul li {
+    display: inline;
+    padding: 10px 30px 10px 10px;
+}
+
+footer .footerpages ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+footer h2 {
+    text-align: center; 
+}
+
+footer address {
+    text-align: center;
+}
+
+footer p {
+    text-align: center;
+}
+
+
+/* CSS for game posters */
+.poster-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.poster {
+    position: relative;
+    margin: 10px;
+    border: 2px solid white;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.poster img {
+    display: block;
+    width: 200px;
+    height: 300px;
+    transition: transform 0.3s ease;
+}
+
+.poster video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+    display: none;
+}
+
+
+.poster:hover img {
+    transform: scale(1.1);
+}
+
+.poster:hover video {
+    display: block;
+}
+
+@media only screen and (max-width: 768px) {
+    html {
+        width: 100%;
+    }
+
+    main {
+        margin-left: 0;
+    }
+
+    .content .subphoto {
+        float: none;
+        width: 100%;
+    }
+
+    .pages {
+        float: none;
+        width: 92%;
+        height: auto;
+    }
+
+    .collections {
+        width: 100%;
+    }
+
+    .game {
+        width: 100%;
+    }
+
+    .top {
+        padding-right: 20px;
+    }
+
+    .footerpages ul {
+        padding: 0;
+        list-style: none;
+        display: flex;
+        flex-wrap: wrap; 
+        justify-content: center;
+        border-radius: 20px;
+        overflow: hidden;
+    }
+
+    .footerpages ul li {
+        margin: 0;
+        width: 80%; 
+        box-sizing: border-box; 
+    }
+
+    .footerpages ul li a {
+        display: block;
+        padding: 10px 20px;
+        text-decoration: none;
+        color: black;
+        font-weight: bold;
+        background-color: rgba(255, 255, 255, 0.326);
+        border-radius: 10px;
+    }
+
+    .end {
+        background-color: rgba(255, 255, 255, 0.326);
+        border-radius: 10px;
+        padding: 5px 5px 5px 5px;
+    }
+}
