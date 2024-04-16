@@ -296,6 +296,15 @@ form input[type="date"] {
     margin-bottom: 10px;
 }
 
+.end {
+    background-color: rgba(255, 255, 255, 0.432);
+    padding: 10px 10px 10px 10px;
+    border-radius: 20px;
+    width: 50%;
+    text-align: center;
+    margin-left: 25%;
+}
+
 
 @media only screen and (max-width: 768px) {
     html {
@@ -359,6 +368,8 @@ form input[type="date"] {
         background-color: rgba(255, 255, 255, 0.326);
         border-radius: 10px;
         padding: 5px 5px 5px 5px;
+        width: 100%;
+        margin-left: 0;
     }
 }
 
